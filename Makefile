@@ -1,7 +1,7 @@
-run: sesc-merge-sort
-	./sesc-merge-sort
+run: sesc-postfix
+	./sesc-postfix
 	
-sesc-merge-sort: sesc-merge-sort.c
-	gcc -Wall -std=c11 sesc-merge-sort.c -o sesc-merge-sort stack.c
+sesc-merge-sort: sesc-postfix.c
+	gcc -Wall -std=c11 sesc-postfix.c -o sesc-postfix stack.c
 
-build: sesc-merge-sort
+build: sesc-postfix
